@@ -1,0 +1,168 @@
+%liafter {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background: red;
+}
+.dgline{
+    height: 2px;
+    width:80px;
+    margin: 25px 0;
+    background: #E9204F;
+}
+#header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+
+    .logo {
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .menu {
+        i {
+            color: #fff;
+        }
+
+        li {
+            a {
+                text-decoration: none;
+                color: #fff;
+                position: relative;
+                padding: 5px 0;
+
+                &.liactive {
+                    &::after {
+                        width: 20px;
+                    }
+                }
+
+                &::after {
+                    @extend %liafter;
+                    width: 0;
+                }
+
+                &:hover {
+                    &::after {
+                        @extend %liafter;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//--Header end--//
+
+#Digital {
+    background-color: #000;
+    background-image: url(../photo/hero_02.jpg);
+    padding: 170px 0;
+    background-repeat: no-repeat;
+    background-size: 640px;
+    height: 100vh;
+    background-position: 90% -23%;
+
+    .digital-middle {
+        color: #fff;
+
+        h2 {
+            font-size: 78px;
+            font-weight: 800;
+            line-height: 80px;
+            letter-spacing: -1.9px;
+            padding: 30px 0;
+        }
+
+        .dgBtn {
+            padding: 12px 25px;
+            border: 1px solid #E9204F;
+            color: #fff;
+            border-radius: 0;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width:0;
+                background: #E9204F;
+                z-index: -1;
+                transition: .3s ease-in-out;
+            }
+
+            &:hover {
+                color: #fff;
+                 &::after{
+                     width: 100%;
+                 }
+            }
+        }
+    }
+    .box1{
+        background: #E9204F;
+        padding: 0 15px;
+        
+    }
+    .box2{
+        background: #1b1b1b;
+        color: white;
+        padding: 0 15px;
+    }
+    .digital-icons{
+        padding: 35px 20px;
+        
+    }
+    .all-box{
+        padding: 35px 0;
+    }
+}
+#services{
+    .services-word{
+        h1{
+            font-weight: bold;
+        }
+        p{
+            color: #E9204F;
+        }
+    } 
+}
+#services{
+    
+
+.sera-item{
+    padding: 15px;
+    background: grey;
+    margin-bottom: 15px;
+   
+    .ser-chees-icon{
+        transform: scale(0);
+        transition: .2s;
+    }
+
+    i,h1{
+transition: .3s;
+    }
+    &:hover{
+        .ser-chees-icon{
+            transform: scale(1.5);
+            
+        }
+       i{
+            transform: translateX(10px);
+        }
+        h1{
+            transform: translateX(20px);
+        }
+    }
+}
+}

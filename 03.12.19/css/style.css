@@ -1,0 +1,163 @@
+#header .menu li a::after, #header .menu li a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background: red;
+}
+
+.dgline {
+  height: 2px;
+  width: 80px;
+  margin: 25px 0;
+  background: #E9204F;
+}
+
+#header {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+}
+
+#header .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .menu i {
+  color: #fff;
+}
+
+#header .menu li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 5px 0;
+}
+
+#header .menu li a.liactive::after {
+  width: 20px;
+}
+
+#header .menu li a::after {
+  width: 0;
+}
+
+#header .menu li a:hover::after {
+  width: 20px;
+}
+
+#Digital {
+  background-color: #000;
+  background-image: url(../photo/hero_02.jpg);
+  padding: 170px 0;
+  background-repeat: no-repeat;
+  background-size: 640px;
+  height: 100vh;
+  background-position: 90% -23%;
+}
+
+#Digital .digital-middle {
+  color: #fff;
+}
+
+#Digital .digital-middle h2 {
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: -1.9px;
+  padding: 30px 0;
+}
+
+#Digital .digital-middle .dgBtn {
+  padding: 12px 25px;
+  border: 1px solid #E9204F;
+  color: #fff;
+  border-radius: 0;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+#Digital .digital-middle .dgBtn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: #E9204F;
+  z-index: -1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#Digital .digital-middle .dgBtn:hover {
+  color: #fff;
+}
+
+#Digital .digital-middle .dgBtn:hover::after {
+  width: 100%;
+}
+
+#Digital .box1 {
+  background: #E9204F;
+  padding: 0 15px;
+}
+
+#Digital .box2 {
+  background: #1b1b1b;
+  color: white;
+  padding: 0 15px;
+}
+
+#Digital .digital-icons {
+  padding: 35px 20px;
+}
+
+#Digital .all-box {
+  padding: 35px 0;
+}
+
+#services .services-word h1 {
+  font-weight: bold;
+}
+
+#services .services-word p {
+  color: #E9204F;
+}
+
+#services .sera-item {
+  padding: 15px;
+  background: grey;
+  margin-bottom: 15px;
+}
+
+#services .sera-item .ser-chees-icon {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#services .sera-item i, #services .sera-item h1 {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#services .sera-item:hover .ser-chees-icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#services .sera-item:hover i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+#services .sera-item:hover h1 {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+/*# sourceMappingURL=style.css.map */
